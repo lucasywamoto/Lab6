@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin: 0 0 24px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container ul{
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-left: 32px;
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 56px;
+    margin: 12px auto 6px auto;
+}
+
+p {
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.2em;
+    hyphens: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+article {
+    background-color: #f3efe9;
+    border-radius: 16px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+.title-container {
+    padding: 2px 24px;
+    border-radius: 16px 16px 0 0;
+}
+
+article p {
+    padding: 2px 24px;
+}
+
+#article-1 .title-container {
+    background-color: #CAEDFF;
+}
+
+#article-2 .title-container {
+    background-color: #FFC7EA;
+}
+
+#article-3 .title-container {
+    background-color: #FBF0B2;
+}
+
+#article-4 .title-container {
+    background-color: #D8B4F8;
+}
+
+footer {
+    width: 90%;
+    margin: 24px auto 0 auto;
+    border-top: 1px solid black;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+
+    header {
+        margin-bottom: 48px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto auto;
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+        width: 90%;
+        margin: auto;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 48px;
+    }
+
+  }
+
+
